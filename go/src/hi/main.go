@@ -15,6 +15,7 @@ const CELCIUS_VALUE = 32
 const CELCIUS_MULTIPLIER = 5
 const CELCIUS_DIVISOR = 9
 
+// main function
 func main() {
 	//runFunctionsandpackages()
 	//runGames()

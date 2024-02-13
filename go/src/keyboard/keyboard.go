@@ -7,6 +7,7 @@ import (
 	"strings"
 )
 
+// Parses a float from a string
 func GetFloat() (float64, error) {
 	reader := bufio.NewReader((os.Stdin))
 
