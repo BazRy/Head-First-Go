@@ -20,8 +20,8 @@ func main() {
 	//runFunctionsandpackages()
 	//runGames()
 	//runCalculatePaintRequired()
-	runPassFail()
-	runCalcTemp()
+	//runPassFail()
+	//runCalcTemp()
 
 }
 
