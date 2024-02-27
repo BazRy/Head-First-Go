@@ -2,10 +2,20 @@ package datafile
 
 import (
 	"bufio"
+	"fmt"
 	"log"
 	"os"
 	"strconv"
 )
+
+func openFile(fileName string) (*os.File, error) {
+	fmt.Printf("Opening file %v\n", fileName)
+	return os.Open(fileName)
+}
+func closeFile(file *os.File) {
+	fmt.Printf("Closing file %v\n", file.Name())
+	file.Close()
+}
 
 func GetFloats(filename string) ([]float64, error) {
 	// mydir, err := os.Getwd()
@@ -14,7 +24,8 @@ func GetFloats(filename string) ([]float64, error) {
 	// }
 	// fmt.Println(mydir)
 
-	file, err := os.Open(filename)
+	file, err := openFile(filename)
+	defer closeFile(file)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -29,10 +40,6 @@ func GetFloats(filename string) ([]float64, error) {
 		numbers = append(numbers, number)
 	}
 
-	err = file.Close()
-	if err != nil {
-		return nil, err
-	}
 	if scanner.Err() != nil {
 		return nil, scanner.Err()
 	}

@@ -4,11 +4,13 @@ import (
 	"Head-First-Go/go/src/datafile"
 	"fmt"
 	"log"
+	"os"
 	"sort"
 )
 
 func main() {
-	candidates, err := datafile.GetStrings("votes.txt")
+	//candidates, err := datafile.GetStrings("votes.txt")
+	candidates, err := datafile.GetStrings(os.Args[1])
 
 	if err != nil {
 		log.Fatal(err)
@@ -34,9 +36,6 @@ func main() {
 			plural = "s"
 		}
 		fmt.Printf("%v) %v has %v vote%v\n", index+1, name, value, plural)
-	}
-
-	type mystruct struct {
 	}
 
 }
