@@ -1,7 +1,7 @@
 package main
 
 import (
-	"Head-First-Go/go/src/interfaces/gadget"
+	"Head-First-Go/interfaces/gadget"
 	"fmt"
 	"log"
 )

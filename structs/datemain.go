@@ -1,7 +1,7 @@
 package main
 
 import (
-	"Head-First-Go/go/src/structs/calendar"
+	"Head-First-Go/structs/calendar"
 	"fmt"
 	"log"
 )

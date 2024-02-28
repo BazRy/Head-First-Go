@@ -1,7 +1,7 @@
 package main
 
 import (
-	"Head-First-Go/go/src/magazinemain/subscription"
+	"Head-First-Go/magazinemain/subscription"
 )
 
 // get a pointer to a struct, not a copy.

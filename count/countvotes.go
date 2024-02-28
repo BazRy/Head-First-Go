@@ -1,7 +1,7 @@
 package main
 
 import (
-	"Head-First-Go/go/src/datafile"
+	"Head-First-Go/datafile"
 	"fmt"
 	"log"
 	"os"

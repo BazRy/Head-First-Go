@@ -2,10 +2,10 @@
 package main
 
 import (
-	"Head-First-Go/go/src/functionsandpackages"
-	"Head-First-Go/go/src/games"
-	"Head-First-Go/go/src/keyboard"
-	"Head-First-Go/go/src/paint"
+	"Head-First-Go/functionsandpackages"
+	"Head-First-Go/games"
+	"Head-First-Go/keyboard"
+	"Head-First-Go/paint"
 	"fmt"
 	"log"
 )
